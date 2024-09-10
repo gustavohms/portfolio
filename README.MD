@@ -4,7 +4,7 @@
 
 ## Stack utilizada
 
-**Front-End:** Bootstrap 5
+**Front-End:** Tailwind
 
 ## 🔗 Links
 
