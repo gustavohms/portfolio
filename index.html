@@ -1,98 +1,143 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Gustavo Henrique - Analista de Sistemas</title>
+    <style>
+      /* CSS para listas com ícones de check */
+      .list-check {
+        list-style: none;
+        padding: 0;
+      }
+      .list-check li {
+        position: relative;
+        padding-left: 1.75rem; /* Espaço para o ícone */
+        margin-bottom: 0.75rem; /* Espaçamento entre os itens */
+        line-height: 1.6;
+      }
+      .list-check li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px; /* Ajuste vertical do ícone */
+        width: 1rem;
+        height: 1rem;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='%2316a34a' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z' /%3E%3C/svg%3E");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    </style>
   </head>
   <body class="bg-gray-100 text-gray-900">
-    <!-- Header -->
     <header class="bg-gray-900 text-white text-center py-12">
       <h1 class="text-4xl font-bold">Gustavo Henrique</h1>
       <p class="text-lg mt-4">Analista de Sistemas / Desenvolvedor</p>
     </header>
 
-    <!-- Profile Section -->
-    <section class="container mx-auto py-12 px-4">
+    <section class="container mx-auto py-16 px-4">
       <div class="flex flex-col lg:flex-row items-center justify-center lg:space-x-12 space-y-8 lg:space-y-0">
-        <!-- Profile Image -->
-        <figure class="w-full lg:w-1/3">
-          <img src="./public/assets/foto_gustavo_monocromatica.png" class="rounded-full shadow-lg mx-auto lg:mx-0" alt="Foto de Gustavo sorrindo">
-          <figcaption class="sr-only">Foto de Gustavo Henrique</figcaption>
+        <figure class="w-full lg:w-1/3 flex justify-center">
+            <img src="./public/assets/foto_rosto_gustavo.jpg" class="rounded-full shadow-lg h-64 w-64 lg:h-80 lg:w-80 object-cover" alt="Foto de Gustavo sorrindo">
+            <figcaption class="sr-only">Foto de Gustavo Henrique</figcaption>
         </figure>
-        <!-- Profile Text -->
         <article class="w-full lg:w-1/2 text-center lg:text-left">
           <h2 class="text-3xl font-semibold mb-4">Sobre mim</h2>
-          <p class="text-lg">Sou apaixonado por tecnologia e desenvolvimento de soluções digitais. Especializado em automação e análise de dados, trago eficiência e inovação para os projetos dos meus clientes.</p>
+          <p class="text-lg text-gray-700">Eu transformo dados em decisões estratégicas e otimizo processos através da automação. Com especialização em análise de dados e desenvolvimento de soluções inteligentes, meu objetivo é entregar projetos que não apenas funcionam, mas que geram <strong>crescimento, eficiência e clareza</strong> para os negócios dos meus clientes.</p>
           <div class="mt-6 space-x-4">
-            <a href="https://www.linkedin.com/in/gustavohenriquems/" target="_blank" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-500 transition">LinkedIn</a>
-            <a href="https://github.com/gustavohms" target="_blank" class="inline-block bg-gray-800 text-white px-6 py-2 rounded-full hover:bg-gray-700 transition">GitHub</a>
+            <a href="https://www.linkedin.com/in/gustavohenriquems/" target="_blank" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-transform duration-300 hover:scale-105">LinkedIn</a>
+            <a href="https://github.com/gustavohms" target="_blank" class="inline-block bg-gray-800 text-white px-6 py-2 rounded-full hover:bg-gray-700 transition-transform duration-300 hover:scale-105">GitHub</a>
           </div>
         </article>
       </div>
     </section>
 
-     <!-- Outro Projeto -->
-    <section class="container mx-auto py-12 px-4">
-      <div class="flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-12">
-        <!-- Texto do projeto -->
-        <article class="lg:w-1/2 text-center lg:text-left">
-          <h2 class="text-2xl font-bold mb-4">Desenvolvimento de Páginas Web</h2>
-          <p class="text-lg">Evolua a sua marca digitalmente, com páginas web para divulgar o seu produto ou serviço e aumentar a percepção de valor sobre o seu negócio. </p>
-          <p><a href="paginas-web.html">Clique e saiba mais.</a></p>
-        </article>
-        <!-- Imagem do projeto -->
-        <figure class="lg:w-1/3 ">
-          <img src="./public/assets/imagem_sites.jpg" class="rounded-lg shadow-lg mx-auto lg:mx-0" alt="Imagem de análise de dados">
-          <figcaption class="sr-only">Imagem ilustrativa de análise de dados</figcaption>
-        </figure>
-      </div>
-      <hr class="my-8 border-gray-300">
+    <div class="bg-gray-200/60">
+
+        <section class="container mx-auto py-16 px-4">
+          <div class="flex flex-col lg:flex-row-reverse items-center justify-center space-y-8 lg:space-y-0 lg:space-x-reverse lg:space-x-12">
+            <article class="lg:w-1/2 text-center lg:text-left bg-white lg:bg-transparent p-8 lg:p-0 rounded-xl lg:rounded-none shadow-md lg:shadow-none">
+              <h2 class="text-2xl lg:text-3xl font-bold mb-4">Sua Marca no Mundo Digital: <span class="text-blue-600">Páginas Web de Impacto</span></h2>
+              <p class="text-lg mb-6">Uma presença online profissional não é mais um luxo, <strong>é uma necessidade.</strong> Eu crio páginas web que não apenas impressionam visualmente, mas são projetadas para transformar visitantes em clientes.</p>
+              
+              <ul class="list-check text-left mx-auto lg:mx-0 max-w-md">
+                <li><strong>Design Responsivo:</strong> Perfeição em qualquer tela, do celular ao desktop.</li>
+                <li><strong>Foco em Conversão:</strong> Estrutura pensada para guiar o usuário à ação.</li>
+                <li><strong>Otimização (SEO):</strong> Construído para ser encontrado no Google.</li>
+              </ul>
+        
+              <a href="#rodape" class="inline-block bg-blue-600 text-white px-6 py-3 text-base font-semibold rounded-lg hover:bg-blue-700 transition mt-8 shadow-lg">
+                Conheça os Detalhes
+              </a>
+            </article>
+            <figure class="lg:w-1/3">
+              <img src="./public/assets/imagem_sites.jpg" class="rounded-lg shadow-lg mx-auto lg:mx-0" alt="Demonstração de um site responsivo em vários dispositivos">
+              <figcaption class="sr-only">Imagem ilustrativa de um site responsivo</figcaption>
+            </figure>
+          </div>
+        </section>
+        
+        <section class="container mx-auto py-16 px-4">
+          <div class="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-12">
+            <article class="lg:w-1/2 text-center lg:text-left bg-white lg:bg-transparent p-8 lg:p-0 rounded-xl lg:rounded-none shadow-md lg:shadow-none">
+              <h2 class="text-2xl lg:text-3xl font-bold mb-4">Automação Inteligente: <span class="text-green-600">Menos Trabalho Manual, Mais Resultados</span></h2>
+              <p class="text-lg mb-6">Libere sua equipe de tarefas repetitivas e <strong>elimine a possibilidade de erros humanos.</strong> Desenvolvo robôs e sistemas que trabalham por você, 24 horas por dia.</p>
+              
+              <ul class="list-check text-left mx-auto lg:mx-0 max-w-md">
+                <li><strong>Comunicação em Massa:</strong> Envios automáticos no WhatsApp para alertas e promoções.</li>
+                <li><strong>Integração de Sistemas:</strong> Conecte suas ferramentas para que trabalhem juntas.</li>
+                <li><strong>Relatórios Automáticos:</strong> Receba os dados mais importantes sem esforço manual.</li>
+              </ul>
+        
+               <a href="#rodape" class="inline-block bg-green-600 text-white px-6 py-3 text-base font-semibold rounded-lg hover:bg-green-700 transition mt-8 shadow-lg">
+                 Automatize seu Negócio
+               </a>
+            </article>
+            <figure class="lg:w-1/3">
+              <img src="./public/assets/imagem_robo.jpeg" class="rounded-lg shadow-lg mx-auto lg:mx-0" alt="Ilustração de um robô interagindo com interfaces digitais">
+              <figcaption class="sr-only">Imagem ilustrativa de um robô de automação</figcaption>
+            </figure>
+          </div>
+        </section>
+        
+        <section class="container mx-auto py-16 px-4">
+          <div class="flex flex-col lg:flex-row-reverse items-center justify-center space-y-8 lg:space-y-0 lg:space-x-reverse lg:space-x-12">
+            <article class="lg:w-1/2 text-center lg:text-left bg-white lg:bg-transparent p-8 lg:p-0 rounded-xl lg:rounded-none shadow-md lg:shadow-none">
+              <h2 class="text-2xl lg:text-3xl font-bold mb-4">Decisões Baseadas em Dados: <span class="text-purple-600">A Clareza que seu Negócio Precisa</span></h2>
+              <p class="text-lg mb-6">Seus dados guardam respostas valiosas, mas podem ser complexos. <strong>Eu ajudo você a transformá-los em insights claros</strong> para uma gestão mais segura e eficiente.</p>
+              
+              <ul class="list-check text-left mx-auto lg:mx-0 max-w-md">
+                <li><strong>Dashboards Interativos:</strong> Visualize a performance do seu negócio em tempo real.</li>
+                <li><strong>Identificação de Tendências:</strong> Descubra seus produtos campeões e oportunidades.</li>
+                <li><strong>Visão 360° do Negócio:</strong> Tenha uma visão clara dos seus indicadores-chave (KPIs).</li>
+              </ul>
+        
+               <a href="#rodape" class="inline-block bg-purple-600 text-white px-6 py-3 text-base font-semibold rounded-lg hover:bg-purple-700 transition mt-8 shadow-lg">
+                 Obtenha mais Clareza
+               </a>
+            </article>
+            <figure class="lg:w-1/3">
+              <img src="./public/assets/foto_dashboard.jpg" class="rounded-lg shadow-lg mx-auto lg:mx-0" alt="Exemplo de um dashboard de análise de dados com gráficos">
+              <figcaption class="sr-only">Imagem ilustrativa de um dashboard de dados</figcaption>
+            </figure>
+          </div>
+        </section>
+    </div>
+    <section id="contato" class="container mx-auto text-center py-16 px-4">
+      <a href="https://wa.me/5561996251695" 
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center bg-green-600 text-white px-8 py-4 text-lg font-bold rounded-full hover:bg-green-500 hover:scale-105 transition-transform duration-300 shadow-xl">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mr-3">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+        </svg>
+        Vamos Conversar!
+      </a>
     </section>
 
-    <!-- Projetos Section -->
-    <section class="container mx-auto py-12 px-4">
-      <div class="flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-12">
-        <!-- Texto do projeto -->
-        <article class="lg:w-1/2 text-center lg:text-left">
-          <h2 class="text-2xl font-bold mb-4">Desenvolvimento de Projetos de Automação</h2>
-          <p class="text-lg">Automatize processos e comunicações, incluindo envios em massa no WhatsApp, alertas de fatura, promoções e muito mais com soluções robóticas personalizadas.</p>
-        </article>
-        <!-- Imagem do projeto -->
-        <figure class="lg:w-1/3 ">
-          <img src="./public/assets/imagem_robo.jpeg" class="rounded-lg shadow-lg mx-auto lg:mx-0" alt="Imagem de um robô">
-          <figcaption class="sr-only">Imagem ilustrativa de um robô</figcaption>
-        </figure>
-      </div>
-      <hr class="my-8 border-gray-300">
-    </section>
-
-    <!-- Outro Projeto -->
-    <section class="container mx-auto py-12 px-4">
-      <div class="flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-12">
-        <!-- Texto do projeto -->
-        <article class="lg:w-1/2 text-center lg:text-left">
-          <h2 class="text-2xl font-bold mb-4">Análise de Dados e Performance</h2>
-          <p class="text-lg">Obtenha insights poderosos sobre seus dados, saiba os campeões de vendas e tenha uma gestão mais eficiente e transparente do seu negócio.</p>
-        </article>
-        <!-- Imagem do projeto -->
-        <figure class="lg:w-1/3">
-          <img src="./public/assets/foto_dashboard.jpg" class="rounded-lg shadow-lg mx-auto lg:mx-0" alt="Imagem de análise de dados">
-          <figcaption class="sr-only">Imagem ilustrativa de análise de dados</figcaption>
-        </figure>
-      </div>
-      <hr class="my-8 border-gray-300">
-    </section>
-
-    <!-- Botão de Contato -->
-    <section class="container mx-auto text-center py-12">
-      <a href="https://wa.me/5561996251695" class="bg-green-600 text-white px-8 py-4 text-lg rounded-full hover:bg-green-500 transition">Vamos Conversar!</a>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-6">
-      <p>Desenvolvido por <a href="https://www.linkedin.com/in/gustavohenriquems/" target="_blank" class="underline">Gustavo Henrique</a></p>
+    <footer id="rodape" class="bg-gray-900 text-white text-center py-6">
+      <p>&copy; 2025 - Desenvolvido por <a href="https://www.linkedin.com/in/gustavohenriquems/" target="_blank" class="underline hover:text-blue-400">Gustavo Henrique</a></p>
     </footer>
   </body>
 </html>
+
