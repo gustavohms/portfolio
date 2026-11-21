@@ -1,14 +1,9 @@
+# Portfólio de Gustavo Henrique
 
-# Repo do meu site pessoal
+[Acesse o portfólio](https://gustavohenrique.dev.br/)
 
+Site de apresentação dos meus serviços de automação comercial, integração de sistemas, dashboards de vendas e triagem com IA. Inclui um simulador de tempo gasto com a digitação de pedidos e links para solicitar um diagnóstico pelo WhatsApp.
 
-## Stack utilizada
+## Desenvolvimento local
 
-**Front-End:** Tailwind
-
-## 🔗 Links
-
-[![site]( https://img.shields.io/badge/Acesse%20o%20site-Clique%20aqui-blue)](https://gustavohenrique.info/)
-
-## 📝 Criado com
-[![site]( https://img.shields.io/badge/Readme.so-blue)](https://readme.so/)
+Abra `index.html` no navegador. O site usa HTML, CSS e JavaScript e pode ser visualizado diretamente, sem instalar dependências.
