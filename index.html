@@ -3,114 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gustavo Henrique | Automação comercial, dashboards e sistemas</title>
-  <meta name="description" content="Organize o retorno de propostas, conecte seu CRM e acompanhe vendas e margem. Fale com Gustavo Henrique sobre o gargalo da sua operação.">
-  <meta property="og:title" content="Gustavo Henrique | Sistemas e automação sob medida">
-  <meta property="og:description" content="Do primeiro contato ao pedido, desenvolvo automações e sistemas para sua equipe acompanhar cada oportunidade.">
+  <meta name="theme-color" content="#f8f8f4">
+  <title>Gustavo Henrique — Desenvolvimento, dados e automação</title>
+  <meta name="description" content="Portfólio de Gustavo Henrique, analista de sistemas e desenvolvedor. Conheça projetos de software, inteligência de dados e automação comercial.">
+  <meta property="og:title" content="Gustavo Henrique — Desenvolvimento, dados e automação">
+  <meta property="og:description" content="Projetos de software para quem precisa conectar sistemas, entender dados e simplificar a operação.">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
   <meta property="og:url" content="https://www.gustavohenrique.dev.br/">
   <meta property="og:image" content="https://www.gustavohenrique.dev.br/public/assets/foto_gustavo.png">
+  <link rel="icon" href="./public/assets/gh-icon.png" type="image/png">
+  <link rel="preload" href="./public/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./src/styles/portfolio.css">
+  <script src="./src/portfolio.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
-  <header>
-    <nav class="wrap" aria-label="Navegação principal">
-      <a class="brand" href="#inicio"><span aria-hidden="true">GH</span> Gustavo Henrique</a>
-      <div class="nav-links"><a href="#servicos">Serviços</a><a href="#simulador">Simulador</a><a href="#processo">Como funciona</a></div>
-      <a class="nav-contact" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Gostaria%20de%20um%20diagn%C3%B3stico%20gratuito.%20A%20rotina%20que%20quero%20melhorar%20%C3%A9%20">Falar com Gustavo</a>
+  <header class="site-header">
+    <nav class="wrap navigation" aria-label="Navegação principal">
+      <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">gh<span>.</span></span>Gustavo Henrique</a>
+      <div class="nav-links" id="nav-links"><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a></div>
+      <a class="nav-cta" href="#contato"><span class="contact-label-wide">Vamos conversar</span><span class="contact-label-small">Contato</span> <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menu" hidden><i></i><i></i></button>
     </nav>
   </header>
   <main id="conteudo">
-    <section class="hero" id="inicio">
-      <div class="wrap hero-layout">
-        <div>
-          <p class="eyebrow">Automação comercial sob medida</p>
-          <h1>Mandou a proposta.<br><em>E o retorno?</em></h1>
-          <p class="lead">Eu sou Gustavo Henrique. Integro seu CRM, crio alertas de retorno e mostro onde as negociações param para sua equipe saber quem procurar hoje.</p>
-          <div class="actions"><a class="button" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Gostaria%20de%20um%20diagn%C3%B3stico%20gratuito.%20A%20rotina%20que%20quero%20melhorar%20%C3%A9%20">Pedir diagnóstico gratuito</a><a href="#servicos" class="text-link">Ver soluções</a></div>
-          <p class="note">Conversa direta comigo pelo WhatsApp.</p>
-        </div>
-        <figure class="showcase" aria-label="Funil comercial com três etapas: contato recebido, proposta enviada e retorno agendado">
-          <div class="funnel" aria-hidden="true">
-            <div class="funnel-tier contact-tier"><i></i><span>Contato recebido</span></div>
-            <div class="funnel-tier quote-tier"><i></i><span>Proposta enviada</span></div>
-            <div class="funnel-tier follow-tier"><i></i><span>Retorno agendado</span></div>
+    <section id="inicio" class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal" aria-hidden="true"></span> Desenvolvimento &amp; dados</p>
+        <h1 id="hero-title">Gustavo<br>Henrique<span>.</span></h1>
+        <p class="hero-description">Sou analista de sistemas e desenvolvedor. Crio software que conecta ferramentas, automatiza rotinas e ajuda equipes a decidir com dados.</p>
+        <div class="hero-actions"><a class="button primary" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a><a class="quiet-link" href="#sobre">Sobre mim <span aria-hidden="true">↘</span></a></div>
+      </div>
+      <div class="portrait">
+        <div class="asterisk" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="orbit" aria-hidden="true"></div>
+        <img src="./public/assets/gustavo-retrato.webp" alt="Gustavo Henrique de braços cruzados" width="444" height="672" fetchpriority="high">
+        <span class="cross top" aria-hidden="true"></span><span class="cross bottom" aria-hidden="true"></span>
+        <span class="portrait-tag" aria-hidden="true">&lt;gh /&gt;</span>
+      </div>
+    </section>
+    <div class="stack-band"><div class="wrap stack"><p class="eyebrow">Tecnologias</p><ul aria-label="Tecnologias utilizadas"><li>Python</li><li class="django">django</li><li>React</li><li class="next">Next.js</li><li>Power BI</li></ul></div></div>
+    <section id="projetos" class="wrap section projects" aria-labelledby="project-title">
+      <p class="eyebrow"><span class="line"></span> Portfólio</p>
+      <div class="section-heading"><h2 id="project-title">Projetos selecionados<span>.</span></h2><a class="quiet-link" href="https://github.com/gustavohms">Perfil no GitHub <span aria-hidden="true">↗</span></a></div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-art synapse-art"><div class="window"><div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="./public/assets/synapse_img_2.png" width="1587" height="744" loading="lazy" alt="Tela do Synapse com dados da análise e recomendação de crédito"></div></div>
+          <div class="project-info"><p class="category">Inteligência artificial</p><h3>Synapse</h3><p>Plataforma de análise de crédito para cooperativas, premiada no programa de inovação Go!Coop.</p>
+            <details class="project-detail"><summary>Sobre o projeto <span class="expand-icon"></span></summary><div><p>A plataforma reúne os dados da operação e apresenta uma recomendação para apoiar a decisão de crédito da cooperativa.</p><ul class="tags"><li>Python</li><li>Machine learning</li></ul><a class="inline-link" href="./public/assets/synapse_img_2.png">Ver tela em tamanho real ↗</a></div></details>
           </div>
-        </figure>
+        </article>
+        <article class="project-card">
+          <div class="project-art finance-art"><img src="./public/assets/dashboards.webp" loading="lazy" width="1100" height="733" alt="Notebook e tablet exibindo gráficos financeiros"></div>
+          <div class="project-info"><p class="category">Business intelligence</p><h3>Dashboards financeiros</h3><p>Painéis interativos para comparar cenários, acompanhar tendências e fazer projeções financeiras.</p>
+            <details class="project-detail"><summary>Sobre o projeto <span class="expand-icon"></span></summary><div><p>O trabalho reúne planilhas e indicadores em uma visão que permite explorar como os números mudam entre cenários.</p><ul class="tags"><li>Power BI</li><li>Google Sheets</li><li>Python</li></ul></div></details>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-art recommendation-art" aria-hidden="true"><div class="map-path"></div><div class="map-node node-one"><i></i><b></b></div><div class="map-node node-two"><i></i><b></b></div><div class="map-node node-three"><i></i><b></b></div><div class="map-hub">✳</div></div>
+          <div class="project-info"><p class="category">Desenvolvimento web</p><h3>Recomendação de serviços</h3><p>Plataforma que conecta uma interface web a um sistema de recomendação de serviços.</p>
+            <details class="project-detail"><summary>Sobre o projeto <span class="expand-icon"></span></summary><div><p>A aplicação combina um back-end em Django com uma interface desenvolvida em React e Next.js para apresentar as recomendações.</p><ul class="tags"><li>Django</li><li>React</li><li>Next.js</li></ul></div></details>
+          </div>
+        </article>
       </div>
     </section>
-    <section class="services" id="servicos"><div class="wrap block">
-      <p class="eyebrow">Serviços</p><h2>Onde sua venda trava?</h2>
-      <div class="offers">
-        <article>
-          <p class="category">Automação comercial</p><h3>Toda proposta precisa de um próximo passo.</h3>
-          <p>Quando uma proposta sai, a automação cria uma tarefa de retorno com data e responsável no CRM.</p>
-          <a class="text-link" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Quero%20acompanhar%20melhor%20o%20retorno%20das%20minhas%20propostas.">Organizar meus retornos</a>
-        </article>
-        <article>
-          <p class="category">Integração de sistemas</p><h3>O pedido entrou. Por que digitar tudo de novo?</h3>
-          <p>Conecto o registro da venda ao sistema de pedidos para a operação receber os dados que o comercial já preencheu.</p>
-          <a class="text-link" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Quero%20integrar%20vendas%20e%20pedidos.%20Hoje%20usamos%20">Integrar meus sistemas</a>
-        </article>
-        <article>
-          <p class="category">Dashboards de vendas</p><h3>Você sabe onde a negociação esfriou?</h3>
-          <p>Reúno propostas, vendas e margem em um painel para comparar canais e identificar em qual etapa as oportunidades param.</p>
-          <a class="text-link" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Quero%20enxergar%20melhor%20o%20meu%20funil%20de%20vendas.">Avaliar meus indicadores</a>
-        </article>
-        <article>
-          <p class="category">Triagem com IA</p><h3>Quem vai atender o próximo contato?</h3>
-          <p>Desenvolvo uma triagem que sugere o assunto de cada solicitação e a fila de atendimento. Sua equipe revisa os casos ambíguos.</p>
-          <a class="text-link" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Quero%20organizar%20a%20triagem%20dos%20contatos%20que%20chegam%20por%20">Avaliar minha triagem</a>
-        </article>
+    <section class="services-section" id="servicos"><div class="wrap section services-layout">
+      <div><p class="eyebrow"><span class="line"></span> Serviços</p><h2>Soluções para<br>sua operação<span>.</span></h2><p class="intro">O ponto de partida é uma tarefa concreta. Veja onde posso ajudar sua equipe.</p></div>
+      <div class="service-list">
+        <details open><summary>Automação comercial <span class="expand-icon"></span></summary><div><p>Quando sua equipe envia uma proposta, o CRM pode criar uma tarefa com prazo e responsável pelo retorno.</p><a class="inline-link" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Quero%20organizar%20o%20retorno%20das%20propostas.">Organizar meus retornos ↗</a></div></details>
+        <details><summary>Integração de sistemas <span class="expand-icon"></span></summary><div><p>Conecto vendas e pedidos para que os dados registrados no comercial cheguem à operação sem redigitação.</p><a class="inline-link" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Quero%20integrar%20meus%20sistemas.">Conversar sobre integração ↗</a></div></details>
+        <details><summary>Dashboards de vendas <span class="expand-icon"></span></summary><div><p>Reúno propostas, vendas e margem em um painel para comparar canais e localizar em que etapa as oportunidades param.</p><a class="inline-link" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Quero%20avaliar%20meus%20indicadores.">Avaliar meus indicadores ↗</a></div></details>
+        <details><summary>Triagem com IA <span class="expand-icon"></span></summary><div><p>Desenvolvo uma triagem que sugere o assunto e a fila de atendimento para cada solicitação. Sua equipe revisa os casos ambíguos.</p><a class="inline-link" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Quero%20organizar%20minha%20triagem.">Conversar sobre triagem ↗</a></div></details>
       </div>
     </div></section>
-    <section class="simulator" id="simulador"><div class="wrap block sim-layout">
-      <div><p class="eyebrow">Simulador de retrabalho</p>
-        <h2>Quanto tempo vai embora copiando pedidos?</h2>
-        <p>Use o volume da sua equipe para estimar o tempo gasto com digitação em uma semana.</p>
+    <section class="wrap section" id="simulador">
+      <div class="simulator"><div><p class="eyebrow"><span class="line"></span> Simulador de retrabalho</p><h2>Quanto tempo vai na digitação?</h2><p class="intro">Estime o tempo que sua equipe gasta copiando pedidos em uma semana.</p></div>
+        <div class="calculator"><div class="fields"><label for="orders">Pedidos por semana<input type="number" id="orders" min="0" max="1000000" step="1" value="60" required></label><label for="minutes">Minutos por pedido<input type="number" id="minutes" min="0" max="1440" step="any" value="5" required></label></div>
+        <output id="estimate" for="orders minutes" aria-live="polite">5 h por semana</output><a class="sim-link" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Quero%20avaliar%20a%20digita%C3%A7%C3%A3o%20manual%20de%20pedidos.">Avaliar essa rotina ↗</a><noscript><p>Para calcular as horas, multiplique os pedidos pelos minutos e divida por 60.</p></noscript></div>
       </div>
-      <div class="calculator">
-        <label for="orders">Pedidos por semana</label>
-        <input type="number" id="orders" min="0" max="1000000" step="1" value="60" required>
-        <label for="minutes">Minutos de digitação por pedido</label>
-        <input type="number" id="minutes" min="0" max="1440" step="any" value="5" required>
-        <output id="estimate" for="orders minutes" aria-live="polite">5 h por semana</output>
-        <a class="text-link" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Quero%20avaliar%20a%20digita%C3%A7%C3%A3o%20manual%20de%20pedidos%20na%20minha%20equipe.">Avaliar essa rotina com Gustavo</a>
-      </div>
+    </section>
+    <section class="wrap about" id="sobre"><div><p class="eyebrow"><span class="line"></span> Sobre mim</p><h2>Como trabalho<span>.</span></h2><p class="intro">Meu trabalho começa entendendo como as pessoas usam as ferramentas que já têm. A partir daí, desenho e desenvolvo a solução junto com a equipe.</p></div>
+      <div id="processo"><ol class="process"><li><h3>Diagnóstico gratuito</h3><p>Conversamos sobre a rotina, quem participa e em que ponto o trabalho costuma parar.</p></li><li><h3>Escopo e proposta</h3><p>Definimos a primeira entrega, os sistemas envolvidos, o investimento e o prazo.</p></li><li><h3>Desenvolvimento e implantação</h3><p>Você acompanha as etapas, valida a solução e recebe orientação para colocá-la em uso.</p></li></ol></div>
+    </section>
+    <section class="wrap faq" id="faq"><h2>Antes de contratar<span>.</span></h2><div class="service-list">
+      <details><summary>Quanto custa um projeto? <span class="expand-icon"></span></summary><div><p>A conversa inicial é gratuita. Com as fontes de dados, integrações e entregas definidas, preparo o orçamento.</p></div></details>
+      <details><summary>Preciso trocar meu sistema atual? <span class="expand-icon"></span></summary><div><p>Podemos começar pelas planilhas e ferramentas que você já usa. No diagnóstico, verificamos as opções de exportação ou integração direta.</p></div></details>
+      <details><summary>O que preciso preparar? <span class="expand-icon"></span></summary><div><p>Descreva uma tarefa, com que frequência ela acontece e quais ferramentas você usa. Um exemplo do resultado esperado ajuda a definir a primeira entrega.</p></div></details>
     </div></section>
-    <section class="wrap block process" id="processo">
-      <div id="sobre"><p class="eyebrow">Como funciona</p><h2>Da primeira conversa à entrega</h2>
-        <div class="author"><img src="./public/assets/foto_gustavo.png" loading="lazy" width="64" height="64" alt="Gustavo Henrique"><p><strong>Gustavo Henrique</strong><br>Analista de sistemas e desenvolvedor</p></div>
-      </div>
-      <ol><li><h3>Diagnóstico gratuito</h3><p>Conte como a tarefa funciona hoje, quem participa e onde o trabalho costuma parar. Avaliamos juntos por onde começar.</p></li><li><h3>Proposta e escopo</h3><p>Definimos a primeira entrega, os sistemas envolvidos, o investimento e o prazo antes da contratação.</p></li><li><h3>Desenvolvimento e implantação</h3><p>Você acompanha as etapas, valida a solução com sua equipe e recebe orientação para colocá-la em uso.</p></li></ol>
-    </section>
-    <section class="wrap faq" id="faq"><h2>Antes de contratar</h2>
-      <details><summary>Quanto custa um projeto?</summary><p>O valor depende das fontes de dados, das integrações e do que sua equipe precisa receber. A conversa inicial é gratuita. Com o escopo definido, preparo o orçamento.</p></details>
-      <details><summary>Preciso trocar meu sistema atual?</summary><p>Podemos começar pelas planilhas e ferramentas que você já usa. No diagnóstico, verificamos se elas permitem exportação de dados ou integração direta.</p></details>
-      <details><summary>O que preciso preparar para conversar?</summary><p>Basta descrever uma tarefa, dizer com que frequência ela acontece e quais ferramentas você usa. Um exemplo do resultado esperado ajuda a definir a primeira entrega.</p></details>
-    </section>
-    <section class="closing" id="contato"><div class="wrap closing-layout"><div><p class="eyebrow">Contato</p><h2>Qual gargalo vamos resolver primeiro?</h2><p>Me conte onde sua equipe perde tempo entre o primeiro contato e o pedido. Vamos avaliar o que dá para automatizar.</p></div><a class="button" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Gostaria%20de%20um%20diagn%C3%B3stico%20gratuito.%20A%20rotina%20que%20quero%20melhorar%20%C3%A9%20">Conversar pelo WhatsApp</a></div></section>
+    <section class="contact" id="contato"><div class="wrap contact-inner"><div><p class="eyebrow"><span class="line"></span> Contato</p><h2>Vamos conversar?</h2><p>Me conte qual rotina você gostaria de melhorar.</p></div><a class="button primary" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Gostaria%20de%20um%20diagn%C3%B3stico%20gratuito.">Chamar no WhatsApp <span aria-hidden="true">↗</span></a></div></section>
   </main>
-  <footer class="wrap"><strong>Gustavo Henrique</strong><a href="mailto:dev.gustavomachado@gmail.com">dev.gustavomachado@gmail.com</a><a href="https://www.linkedin.com/in/gustavohenriquems/">LinkedIn</a><a href="https://github.com/gustavohms">GitHub</a><small>Design original por Samanta Marinho.</small></footer>
-  <script>
-    const orders = document.getElementById('orders');
-    const minutes = document.getElementById('minutes');
-    const estimate = document.getElementById('estimate');
-    const format = new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 });
-    function updateEstimate() {
-      if (!orders.validity.valid || !minutes.validity.valid) {
-        estimate.value = 'Confira os valores informados.';
-        return;
-      }
-      const total = orders.valueAsNumber * minutes.valueAsNumber;
-      estimate.value = total > 0 && total < 60
-        ? format.format(total) + ' min por semana'
-        : format.format(total / 60) + ' h por semana';
-    }
-    orders.addEventListener('input', updateEstimate);
-    minutes.addEventListener('input', updateEstimate);
-    updateEstimate();
-  </script>
+  <footer class="wrap footer"><div class="footer-main"><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">gh<span>.</span></span>Gustavo Henrique</a><div class="social"><a href="mailto:dev.gustavomachado@gmail.com">E-mail ↗</a><a href="https://www.linkedin.com/in/gustavohenriquems/">LinkedIn ↗</a><a href="https://github.com/gustavohms">GitHub ↗</a></div></div><small>Design original por Samanta Marinho.</small></footer>
 </body>
 </html>
