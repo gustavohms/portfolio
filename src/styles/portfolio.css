@@ -145,6 +145,15 @@ output { display: block; font-size: clamp(24px,2.4vw,38px); letter-spacing: -.05
 .footer-main { justify-content: space-between; gap: 20px; }
 .social { gap: 22px; font-size: 14px; font-weight: 600; }
 .footer small { display: block; color: var(--muted); font-size: 11px; margin-top: 20px; }
+.guide-feature { display: grid; grid-template-columns: minmax(180px,.65fr) 1fr; align-items: center; gap: clamp(24px,6vw,84px); padding-bottom: clamp(60px,7vw,100px); }
+.guide-cover { display: grid; place-items: center; background: #eeeee7; border-radius: 12px; padding: 30px; }
+.guide-cover img { display: block; width: min(100%,195px); height: auto; transform: rotate(-3deg); box-shadow: 5px 7px 0 #bdb6cf; }
+@media (max-width: 700px) {
+  .guide-feature { grid-template-columns: 1fr; }
+  .guide-cover { padding: 22px; }
+  .guide-cover img { width: 142px; }
+  .guide-feature .hero-actions { flex-wrap: wrap; gap: 8px 20px; }
+}
 @media (max-width: 900px) {
   .wrap { width: 90%; }
   .navigation { gap: 19px; min-height: 67px; }

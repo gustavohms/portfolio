@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Onde o pedido trava? | Gustavo Henrique</title><meta name="author" content="Gustavo Henrique"><meta name="description" content="Um guia de campo para identificar retrabalho, testar melhorias com Lean Six Sigma, programação e IA e desenhar seu primeiro piloto."><link rel="stylesheet" href="./guia.css"><link rel="icon" href="../../assets/gh-icon.png"></head>
+<body><nav class="bar" aria-label="Navegação do e-book"><a href="../../../index.html#ebook">← Voltar ao portfólio</a><a href="./onde-o-pedido-trava.pdf" download>Baixar PDF ↓</a></nav><main>
+<header class="page cover"><p class="folio">Guia de campo · Operações</p><h1>Onde o<br>pedido<br>trava?</h1><p class="subtitle">Como encontrar retrabalho e testar melhorias com Lean Six Sigma, programação e IA.</p><div class="tracks" aria-hidden="true"><i></i><i></i><i></i><i></i></div><p class="by">Gustavo Henrique</p></header>
+<section class="page" id="capitulo-1" aria-labelledby="titulo-1"><header class="folio"><span>O ponto de partida</span><span>02 / 08</span></header><h2 id="titulo-1">Siga um pedido que voltou.</h2>
+<p class="lead">O cliente aprovou a proposta na terça. Na quinta, pergunta pela entrega. Vendas achava que o pedido já estava com a operação. A operação esperava o código do produto.</p>
+<p>Vamos acompanhar essa equipe fictícia. Se você trabalha por conta própria, pense na última vez que precisou interromper um serviço para pedir uma informação que já poderia ter recebido.</p>
+<h3>Reconstitua o caminho</h3>
+<ol class="flow"><li><b>Vendas</b> registra a aprovação por e-mail.</li><li><b>Operação</b> copia a proposta para o sistema de pedidos.</li><li><b>Vendas</b> procura o código que faltou e devolve a informação.</li><li><b>Operação</b> retoma o cadastro quando chega à mensagem.</li></ol>
+<p>Quem digita enxerga cinco minutos de trabalho. Quem compra sente dois dias de espera. Pergunte a quem recebeu o pedido o que faltava para seguir. A resposta define o que vale medir.</p>
+<aside><strong>Experimente hoje</strong>Escolha um pedido recente. Com quem o executou, marque o início, a entrega e cada momento em que alguém precisou esperar.</aside></section>
+<section class="page" id="capitulo-2" aria-labelledby="titulo-2"><header class="folio"><span>A medição</span><span>03 / 08</span></header><h2 id="titulo-2">Dê tamanho ao problema.</h2>
+<p class="lead">Pegue 20 pedidos consecutivos de um mesmo canal. Inclua os que deram certo. Para cada um, registre se a operação conseguiu concluir o cadastro na primeira tentativa.</p>
+<table><caption>Exemplo fictício de uma semana</caption><thead><tr><th>O que aconteceu</th><th>Pedidos</th></tr></thead><tbody><tr><td>Seguiram na primeira tentativa</td><td>14</td></tr><tr><td>Voltaram por falta do código</td><td>4</td></tr><tr><td>Voltaram por falta do endereço</td><td>2</td></tr></tbody></table>
+<p><strong>6 de 20 pedidos voltaram (30%).</strong> Quatro dessas seis devoluções envolveram o código. É uma pista para investigar. Abra as quatro propostas e veja em que momento a informação se perdeu.</p>
+<h3>Conte também o esforço</h3><p>Se uma equipe digita 60 pedidos por semana e leva, em média, 5 minutos por cadastro, são 300 minutos, ou <strong>5 horas semanais de digitação</strong>. Parte desse tempo pode continuar necessária para conferir exceções.</p>
+<aside><strong>Dois relógios</strong>Meça o esforço em minutos de trabalho por pedido. O prazo total vai da aprovação ao cadastro concluído. Para medir só a espera, some os intervalos em que o pedido ficou parado.</aside></section>
+<section class="page" id="capitulo-3" aria-labelledby="titulo-3"><header class="folio"><span>A causa</span><span>04 / 08</span></header><h2 id="titulo-3">Descubra por que o campo vem vazio.</h2>
+<p class="lead">Na conversa entre as duas áreas, surge um detalhe. O modelo de proposta pede o nome comercial do produto. O cadastro da operação exige o código do catálogo.</p>
+<p>“Preencher com mais atenção” seria uma orientação difícil de cumprir. Peça a um vendedor que registre um pedido enquanto você observa. Ele consegue encontrar o código? O campo aparece no momento em que ele escolhe o produto?</p>
+<h3>Faça um teste pequeno</h3><p>Experimente com uma família de produtos. Ao selecionar o item do catálogo, o vendedor vê nome e código juntos. A operação confere se o código recebido corresponde ao item vendido. Registre também quanto tempo a seleção toma de vendas.</p>
+<div class="method"><h3>Como o Lean Six Sigma entra aqui</h3><p>Uso o ciclo DMAIC para organizar a investigação de um processo existente.</p><ol><li><b>Definir</b> onde começa e termina o pedido.</li><li><b>Medir</b> quantos cadastros voltam e por quê.</li><li><b>Analisar</b> como o código se perde na passagem.</li><li><b>Melhorar</b> a seleção do produto na origem.</li><li><b>Controlar</b> as devoluções após a mudança.</li></ol></div>
+<p class="source">Para aprofundar o método, consulte a <a href="https://asq.org/quality-resources/dmaic">introdução ao DMAIC da ASQ</a>.</p></section>
+<section class="page" id="capitulo-4" aria-labelledby="titulo-4"><header class="folio"><span>O desenho da solução</span><span>05 / 08</span></header><h2 id="titulo-4">Onde entram código e IA?</h2>
+<p class="lead">Com o catálogo organizado, ainda há duas tarefas distintas. Uma pessoa copia campos entre sistemas. Outra interpreta mensagens que chegam depois da aprovação.</p>
+<h3>Quando a regra cabe em uma frase</h3><p>“Ao aprovar a proposta, criar um pedido com os itens selecionados.” Uma integração pode copiar os campos, conferir o código no catálogo e gravar o número do pedido na proposta. Se a conexão cair, esse identificador ajuda a retomar o envio sem duplicar o pedido.</p>
+<h3>Quando a mensagem admite interpretações</h3><blockquote>“Preciso mudar o local de entrega. O pedido continua para sexta?”</blockquote>
+<p>Uma IA pode sugerir os assuntos “alteração de endereço” e “consulta de prazo” e destacar os trechos que justificam a sugestão. A atendente confirma o destino e consulta o prazo antes de responder ao cliente.</p>
+<aside><strong>Como testar a triagem</strong>Separe mensagens antigas sem dados pessoais, incluindo pedidos com dois assuntos. Faça a equipe classificá-las. Em uma amostra reservada para teste, conte quantos assuntos a IA deixou passar e quanto tempo a revisão consumiu. Se houver dúvida, a mensagem segue para uma pessoa.</aside></section>
+<section class="page" id="capitulo-5" aria-labelledby="titulo-5"><header class="folio"><span>O piloto</span><span>06 / 08</span></header><h2 id="titulo-5">Combine antes o que seria sucesso.</h2>
+<p class="lead">Escolha um canal, uma família de produtos e alguém de cada área. Registre a regra de decisão antes de colocar a mudança em uso.</p>
+<div class="method"><h3>Um acordo possível para o exemplo</h3><p>Nos próximos 20 pedidos comparáveis, reduzir as devoluções de 6 para, no máximo, 3. A operação confere o código de todos os pedidos. Um código incorreto ou um pedido duplicado interrompe o envio automático para revisão.</p></div>
+<h3>Compare o trabalho das duas áreas</h3><p>Repita a contagem da primeira semana com a mesma definição de devolução. Some os minutos de seleção em vendas, de digitação na operação e de correção nas duas pontas. Registre se mudou o tipo de pedido recebido.</p>
+<h3>Decida com quem executa</h3><p>Se as devoluções caírem e vendas passar mais tempo procurando códigos, investigue a busca no catálogo. Se o resultado se sustentar em outro lote e a equipe conseguir tratar as exceções, amplie para a próxima família de produtos.</p>
+<aside><strong>Depois do teste</strong>Combine quem lê a fila de falhas diariamente e quem revê as devoluções a cada semana. Enquanto uma falha estiver aberta, a operação consegue retomar o cadastro manual pelo número da proposta.</aside></section>
+<section class="page" id="capitulo-6" aria-labelledby="titulo-6"><header class="folio"><span>Ficha de trabalho</span><span>07 / 08</span></header><h2 id="titulo-6">Desenhe o seu primeiro teste.</h2>
+<p class="lead">Escolha uma rotina que você consegue observar nesta semana. Copie as perguntas para suas anotações ou imprima esta página e preencha com quem faz o trabalho.</p>
+<div class="worksheet">
+<h3>Qual rotina e para quem?</h3><p>Começa quando… Termina quando… Quem espera a entrega?</p>
+<h3>O que aconteceu da última vez?</h3><p>Em qual etapa o trabalho parou? Que informação faltou?</p>
+<h3>Como está hoje?</h3><p>De quantos casos observados, quantos voltaram? Em qual período?</p>
+<h3>Que mudança pequena vale testar?</h3><p>O que muda, quem testa e em qual grupo de casos?</p>
+<h3>Como vamos decidir?</h3><p>Qual resultado justifica ampliar? Que erro exige pausar? Quem acompanha?</p>
+</div></section>
+<section class="page" id="capitulo-7" aria-labelledby="titulo-7"><header class="folio"><span>Da ficha à conversa</span><span>08 / 08</span></header><h2 id="titulo-7">Traga um caso da sua rotina.</h2>
+<p class="lead">Uma boa primeira conversa pode começar com quatro linhas. Se você preencheu a ficha, já tem o que precisa.</p>
+<blockquote>“Quando uma proposta é aprovada, a operação redigita os itens. Em 20 pedidos, seis voltaram. Queremos testar a seleção pelo catálogo. Você pode nos ajudar a descobrir se isso resolve?”</blockquote>
+<p>Com um exemplo assim, podemos desenhar o fluxo, escolher uma medida inicial e decidir o que construir juntos. Às vezes, a primeira entrega é uma mudança no formulário. Em outros casos, faz sentido conectar os sistemas ou experimentar uma triagem com IA.</p>
+<div class="author"><strong>Gustavo Henrique</strong><p>Sou analista de sistemas e desenvolvedor, Black Belt em Lean Six Sigma, com pós-graduação em Inteligência Artificial. Trabalho com a equipe que vive o processo para transformar uma dificuldade concreta em uma melhoria que ela consiga medir e manter.</p></div>
+<a class="talk" href="https://wa.me/5561999522354?text=Ol%C3%A1%2C%20Gustavo!%20Li%20seu%20guia%20e%20queria%20conversar%20sobre%20uma%20rotina%20que%20podemos%20melhorar.">Conversar com Gustavo pelo WhatsApp</a>
+<p class="source">Se preferir, escreva para <a href="mailto:dev.gustavomachado@gmail.com">dev.gustavomachado@gmail.com</a>.</p></section>
+</main></body></html>
